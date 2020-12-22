@@ -1,5 +1,6 @@
 import React from "react";
+import Jumbo from "./components/jumbo";
 
 export default function App() {
-  return <div className="App">Hello</div>;
+  return <Jumbo />;
 }
