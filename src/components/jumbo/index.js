@@ -11,7 +11,7 @@ import {
 
 export default function Jumbo({ children, direction = "row", ...restProps }) {
   return (
-    <Item>
+    <Item {...restProps}>
       <Inner direction={direction}>{children}</Inner>
     </Item>
   );
