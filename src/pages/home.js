@@ -19,7 +19,6 @@ export default function Home() {
           <Form>
             <Form.Input placeholder="Email Address" />
             <Form.Button>Try it now</Form.Button>
-            <br />
             <Form.Text>
               Ready to watch? Enter your email to create or restart your
               membership
