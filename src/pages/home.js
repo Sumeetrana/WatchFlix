@@ -6,11 +6,10 @@ import { JumboContainer } from "../containers/jumbotron";
 export default function Home() {
   return (
     <>
-      <HeaderContainer>
-        <JumboContainer />
-        <AccordionContainer />
-        <FooterContiner />
-      </HeaderContainer>
+      <HeaderContainer></HeaderContainer>
+      <JumboContainer />
+      <AccordionContainer />
+      <FooterContiner />
     </>
   );
 }
