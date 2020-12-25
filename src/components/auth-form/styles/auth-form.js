@@ -50,12 +50,38 @@ export const TextSmall = styled.p`
 `;
 export const Link = styled(RouterLink)`
   color: white;
-  tex-decoration: none;
+  text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
 `;
 
-export const Input = styled.input``;
+export const Input = styled.input`
+  background: #333;
+  border-radius: 4px;
+  border: 0;
+  color: white;
+  line-height: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 5px 20px;
 
-export const Submit = styled.button``;
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
+`;
+
+export const Submit = styled.button`
+  background: #e50914;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 24px 0 12px;
+  padding: 16px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  &:disabled {
+    opacity: 0.5;
+  }
+`;
