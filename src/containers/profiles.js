@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../components";
+import { Header, Profile } from "../components";
 import * as ROUTES from "../constants/routes";
 import logo from "../logo.png";
 
@@ -12,15 +12,15 @@ export function SelectionProfileContainer({ user, setProfile }) {
         </Header.Frame>
       </Header>
 
-      <Profiles>
+      <Profile>
         <Profile.Title>Who's watching?</Profile.Title>
-        <Profiles.List>
-          <Profiles.User>
-            <Profiles.Picture src={user.photoURL} />
-            <Profiles.Name>{user.displayName}</Profiles.Name>
-          </Profiles.User>
-        </Profiles.List>
-      </Profiles>
+        <Profile.List>
+          <Profile.User>
+            <Profile.Picture src={user.photoURL} />
+            <Profile.Name>{user.displayName}</Profile.Name>
+          </Profile.User>
+        </Profile.List>
+      </Profile>
     </>
   );
 }
