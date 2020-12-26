@@ -6,3 +6,4 @@ export { default as Header } from "./header";
 export { default as Feature } from "./feature";
 export { default as AuthForm } from "./auth-form";
 export { default as Profile } from "./profile";
+export { default as Loading } from "./loading";
