@@ -7,6 +7,7 @@ export const Background = styled.div`
   background: url(${({ src }) =>
       src ? `../images/misc/${src}.jpg` : "../images/misc/home-bg.jpg"})
     top left / cover no-repeat;
+<<<<<<< HEAD
 
   @media (max-width: 1100px) {
     ${({ dontShowOnSmallViewPort }) =>
@@ -23,6 +24,8 @@ export const Background = styled.div`
 export const Group = styled.div`
   display: flex;
   align-items: center;
+=======
+>>>>>>> 98e5613604ea62f3dda79350f3971a1c90b886ed
 `;
 
 export const Frame = styled.div``;
@@ -73,6 +76,7 @@ export const Button = styled(Link)`
     background-color: #f40612;
   }
 `;
+<<<<<<< HEAD
 
 export const Feature = styled(Container)`
   padding: 150px 0 500px 0;
@@ -120,3 +124,5 @@ export const FeatureCallOut = styled.h2`
     font-size: 35px;
   }
 `;
+=======
+>>>>>>> 98e5613604ea62f3dda79350f3971a1c90b886ed
