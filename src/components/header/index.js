@@ -11,6 +11,9 @@ import {
   FeatureCallOut,
   TextLink,
   Group,
+  Picture,
+  Dropdown,
+  Profile,
 } from "./styles/header";
 
 export default function Header({ bg = true, children, ...restProps }) {
@@ -26,6 +29,18 @@ Header.FeatureCallOut = function HeaderFeatureCallOut({
   ...restProps
 }) {
   return <FeatureCallOut {...restProps}>{children}</FeatureCallOut>;
+};
+
+Header.Picture = function HeaderPicture({ src, ...restprops }) {
+  return <Picture {...restprops} src={`/images/users/${src}.png`} />;
+};
+
+Header.Profile = function HeaderProfile({ children, ...restProps }) {
+  return <Profile {...restProps}>{children}</Profile>;
+};
+
+Header.Dropdown = function HeaderDropdown({ children, ...restProps }) {
+  return <Dropdown {...restProps}>{children}</Dropdown>;
 };
 
 Header.Text = function HeaderText({ children, ...restProps }) {
