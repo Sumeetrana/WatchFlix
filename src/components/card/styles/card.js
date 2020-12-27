@@ -22,7 +22,7 @@ export const FeatureClose = styled.button``;
 
 export const Maturity = styled.div``;
 
-export const Context = styled.div``;
+export const Content = styled.div``;
 
 export const Meta = styled.div``;
 
