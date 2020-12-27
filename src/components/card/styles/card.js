@@ -26,4 +26,6 @@ export const Context = styled.div``;
 
 export const Meta = styled.div``;
 
+export const Entities = styled.div``;
+
 export const Image = styled.img``;
