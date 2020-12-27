@@ -125,10 +125,16 @@ export const Dropdown = styled.div`
   display: none;
   background-color: black;
   position: absolute;
-  padding: 10px;
+  padding: 15px;
   width: 100px;
   top: 32px;
   right: 10px;
+
+  p {
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
 `;
 
 export const Picture = styled.button`
@@ -156,7 +162,7 @@ export const Profile = styled.div`
     align-items: center;
   }
 
-  // &:hover > ${Dropdown} > ${Picture} {
-
-  // }
+  &:hover > ${Group} {
+    margin: 10px;
+  }
 `;
