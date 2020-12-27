@@ -81,12 +81,13 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
 
   return showFeature ? (
     <Feature
+      {...restProps}
       src={`/images/${category}/${itemFeature.genre}/${itemFeature.slug}/large.jpg`}
     >
       <Content>
         <FeatureTitle>{itemFeature.title}</FeatureTitle>
-        <FeatureText>{itemFeature.text}</FeatureText>
-        <FeatureClose onCLick={() => setShowFeature(false)}>
+        <FeatureText>{itemFeature.description}</FeatureText>
+        <FeatureClose onClick={() => setShowFeature(false)}>
           <img src="/images/icons/close.png" alt="Close" />
         </FeatureClose>
       </Content>
