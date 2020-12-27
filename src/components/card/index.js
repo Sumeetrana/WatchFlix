@@ -14,6 +14,7 @@ import {
   FeatureText,
   Maturity,
   Content,
+  SubTitle,
 } from "./styles/card";
 
 export const FeatureContext = createContext();
@@ -67,4 +68,8 @@ Card.Item = function CardItem({ item, children, ...restProps }) {
 
 Card.Image = function CardImage({ ...restProps }) {
   return <Image {...restProps} />;
+};
+
+Card.SubTitle = function CardSubTitle({ children, ...restProps }) {
+  return <SubTitle {...restProps}>{children}</SubTitle>;
 };

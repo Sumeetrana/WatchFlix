@@ -6,11 +6,11 @@ export const Title = styled.p``;
 
 export const Group = styled.div``;
 
-export const SubTitle = styled.p;
+export const SubTitle = styled.p``;
 
-export const Text = styled.p;
+export const Text = styled.p``;
 
-export const Item = styled.p;
+export const Item = styled.p``;
 
 export const Feature = styled.div``;
 
