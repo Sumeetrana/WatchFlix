@@ -27,7 +27,7 @@ Player.Video = function PlayerVideo({ src, ...restProps }) {
             <video id="netflix-player" controls>
               <source src={src} type="video/mp4" />
             </video>
-            <Close onClick={() => setShowPlayer((showPlayer) => !showPlayer)} />
+            <Close onClick={() => setShowPlayer(false)} />
           </Inner>
         </Overlay>,
         document.body
