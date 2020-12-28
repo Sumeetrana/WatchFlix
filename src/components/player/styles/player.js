@@ -24,6 +24,7 @@ export const Inner = styled.div`
   video {
     height: 100%;
     width: 100%;
+    z-index: 999;
   }
 `;
 
@@ -33,7 +34,7 @@ export const Close = styled.button`
   top: 15px;
   width: 22px;
   height: 22px;
-  opacity: 0.3;
+  opacity: 0.6;
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -50,7 +51,7 @@ export const Close = styled.button`
     content: " ";
     height: 22px;
     width: 2px;
-    background-color: #333;
+    background-color: #000;
   }
 
   &:before {
